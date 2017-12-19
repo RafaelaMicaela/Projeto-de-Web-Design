@@ -63,3 +63,7 @@ a.page-link:hover
 {
     color:rgb(1, 150, 110);
 }
+.image-logo
+{
+    height: 50px;
+}

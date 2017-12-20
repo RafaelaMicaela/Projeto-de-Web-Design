@@ -25,6 +25,17 @@
     justify-content: center;
     display: flex;
 }	
+.parallax2 {
+    background-image: url("../img/loginparalax.png");
+    min-height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}	
 .header{
     color:white;
     font-family: 'Orbitron', sans-serif;
@@ -85,6 +96,41 @@ a.page-link:hover
 .col a:hover{
     color: rgb(98, 147, 255);
 }
+.link-style{
+    color: rgb(255, 255, 255);
+    font-family: 'Fredericka the Great', cursive;
+    display:flow-root;
+}
+.link-style-box{
+    background-color: #00000096;
+}
+.link-style:hover{
+    color: rgb(98, 147, 255);
+}
 .card{
     padding-top:1%;
+}
+.login{
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width:100%;
+    align-items: center;
+    justify-content: center;    
+    display: flex;              
+    flex-direction: column;  
+}
+.login>.card
+{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    width:45%; 
+    background-color:rgba(111, 111, 111, 0.487);
+    box-shadow: 0.5ex 0.5ex 1ex 0ex #575757;
+}
+.form-control:focus
+{
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 1ex 1ex rgba(106, 129, 255, 0.075) inset, 0 0 8ex rgba(106, 129, 255, 0.6);
+    outline: 0 none;
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
-
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Fredericka+the+Great|Zilla+Slab+Highlight');
 .tales {
     width: 100%;
 }
@@ -75,5 +75,13 @@ a.page-link:hover
 .footer>.row>.col
 {
     margin: 0;
-    margin-left:10%;
+    margin-left:11%;
+}
+.col a{
+    color: rgb(255, 255, 255);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 12px;
+}
+.col a:hover{
+    color: rgb(98, 147, 255);
 }

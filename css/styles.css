@@ -134,8 +134,9 @@ a.page-link:hover
 }
 .login>.card
 {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100%;  
     width:45%; 
+    min-width:400px;
     background-color:rgba(111, 111, 111, 0.487);
     box-shadow: 0.5ex 0.5ex 1ex 0ex #575757;
 }
@@ -144,4 +145,7 @@ a.page-link:hover
     border-color: rgb(255, 255, 255);
     box-shadow: 0 1ex 1ex rgba(106, 129, 255, 0.075) inset, 0 0 8ex rgba(106, 129, 255, 0.6);
     outline: 0 none;
+}
+.search-result{
+    background-color: #c4c3c369 ;
 }

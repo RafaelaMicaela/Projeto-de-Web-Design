@@ -134,11 +134,14 @@ a.page-link:hover
 }
 .login>.card
 {
-    min-height: 100%;  
     width:45%; 
-    min-width:400px;
+    min-width:500px;
     background-color:rgba(111, 111, 111, 0.487);
     box-shadow: 0.5ex 0.5ex 1ex 0ex #575757;
+}
+.login>.cadastro
+{
+    min-height: 370px;
 }
 .form-control:focus
 {

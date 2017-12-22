@@ -132,7 +132,6 @@ a.page-link:hover
 }
 .card{
     padding-top:1%;
-    margin-bottom: 1%;
 }
 .login{
     height: 50%;
@@ -164,4 +163,7 @@ a.page-link:hover
 }
 .search-result{
     background-color: #c4c3c369 ;
+}
+[class*='col-']{
+    margin-bottom: 2%;
 }

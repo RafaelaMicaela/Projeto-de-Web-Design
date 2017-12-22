@@ -2,7 +2,8 @@
     <head>
         <title>Djent Store</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,7 +33,7 @@
                         </div>
                     </li>
                     <form class="form-inline" action="busca.html" method="POST">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <input class="form-control mr-sm-2" type="search" disabled value="Jackson" aria-label="Search">
                         <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
                     </form>
                 </ul>
@@ -47,6 +48,35 @@
             </div>
         </nav>	
 <!-- =================================== FIM NAV ========================================== -->
+
+      
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <img class="mySlides" src="img/detalhe1.jpg" style="width:100%">
+                <img class="mySlides" src="img/detalhe2.jpg" style="width:100%">
+                <img class="mySlides" src="img/detalhe3.jpg" style="width:100%">
+            
+                <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity" src="img/detalhe1.jpg" style="width:100%" onclick="currentDiv(1)">
+                    </div>
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity" src="img/detalhe2.jpg" style="width:100%" onclick="currentDiv(2)">
+                    </div>
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity" src="img/detalhe3.jpg" style="width:100%" onclick="currentDiv(3)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 text-center">
+                <h1>Jackson Misha Mansoor 6 cordas</h1>
+                <h3>750,00U$</h3>
+            </div>
+        </div>
+      </div>
+      
+      
 
 
 <!-- ========================== FOOTER ============================== -->
@@ -69,7 +99,34 @@
         </div>
 
 	<!-- ================== SCRIPTS ==================== -->
-
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-opacity-off";
+            }
+        </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

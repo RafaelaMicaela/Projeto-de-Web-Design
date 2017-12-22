@@ -127,6 +127,8 @@ a.page-link:hover
 }
 .card{
     padding-top:1%;
+    max-width: 400px;
+    min-width: 350px;
 }
 .login{
     height: 50%;

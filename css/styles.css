@@ -108,12 +108,7 @@ a.page-link:hover
 {
     margin: 0;
 }
-.footer>.row>.col
-{
-    margin: 0;
-    margin-left:11%;
-}
-.col a{
+[class*='col-'] a{
     color: rgb(255, 255, 255);
     font-family: 'Fredericka the Great', cursive;
     font-size: 12px;

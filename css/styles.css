@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Fredericka+the+Great|Zilla+Slab+Highlight');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 @media only screen and (max-width: 720px) 
 {
@@ -166,4 +166,13 @@ a.page-link:hover
 }
 [class*='col-']{
     margin-bottom: 2%;
+}
+.money{
+    color:#2be92b;
+    font-family: 'Quicksand', sans-serif;
+    font-size:1.2em;
+}
+.money-title{
+    font-family: 'Quicksand', sans-serif;
+    font-size:2em;
 }
